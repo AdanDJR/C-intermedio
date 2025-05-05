@@ -1,4 +1,26 @@
 ﻿using Practica_ISP;
+IAve canario = new Canario();
+IAve pato = new Pato();
+IAveCazadora aguilaCazadora = new Aguila();
+IAveNadadora patoNadador = new Pato(); 
+
+Console.WriteLine("=== Canario ===");
+canario.Volar();
+canario.Cantar();
+canario.PonerHuevos();
+
+Console.WriteLine("\n=== Pato ===");
+pato.Volar();
+pato.Cantar();
+pato.PonerHuevos();
+patoNadador.Nadar(); 
+
+Console.WriteLine("\n=== Águila ===");
+IAve aguila = (IAve)aguilaCazadora;
+aguila.Volar();
+aguila.Cantar();
+aguila.PonerHuevos();
+aguilaCazadora.Cazar(); 
 
 class Canario : IAve
 {
@@ -22,4 +44,3 @@ class Aguila : IAve, IAveCazadora
     public void PonerHuevos() => Console.WriteLine("El águila pone huevos.");
     public void Cazar() => Console.WriteLine("El águila caza.");
 }
-
