@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practica OCP", "Practica OCP\Practica OCP.csproj", "{6774A14D-48ED-4670-99C1-25E273ED0D99}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6774A14D-48ED-4670-99C1-25E273ED0D99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6774A14D-48ED-4670-99C1-25E273ED0D99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6774A14D-48ED-4670-99C1-25E273ED0D99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6774A14D-48ED-4670-99C1-25E273ED0D99}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FD98B411-AD28-4EA1-8007-25D9DEA6A551}
+	EndGlobalSection
+EndGlobal
