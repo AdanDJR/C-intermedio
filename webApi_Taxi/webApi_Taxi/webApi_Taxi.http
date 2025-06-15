@@ -1,0 +1,6 @@
+@webApi_Taxi_HostAddress = http://localhost:5178
+
+GET {{webApi_Taxi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

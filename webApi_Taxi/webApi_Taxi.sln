@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "webApi_Taxi", "webApi_Taxi\webApi_Taxi.csproj", "{3FFEE8D4-F32D-4ACA-8348-5CA3D0724DFB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3FFEE8D4-F32D-4ACA-8348-5CA3D0724DFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FFEE8D4-F32D-4ACA-8348-5CA3D0724DFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FFEE8D4-F32D-4ACA-8348-5CA3D0724DFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FFEE8D4-F32D-4ACA-8348-5CA3D0724DFB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {29F08794-333B-46DF-A061-7F0F48716B49}
+	EndGlobalSection
+EndGlobal
