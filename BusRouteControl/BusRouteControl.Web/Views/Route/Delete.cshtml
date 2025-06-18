@@ -1,0 +1,94 @@
+﻿@model BusRouteScheduleViewModel
+
+<div class="w-100 card border-bottom-0">
+    <div class="card-header ml-0 py-3" style="background-color: #023673">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="text-white py-2">Route Details</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card-body border p-4">
+    <form asp-action="DeleteConfirm" asp-route-id="@Model.Id" method="post" class="row">
+
+        <div class="form-floating py-0 col-12">
+            <input type="hidden" asp-for="Id" />
+        </div>
+        <div class="form-floating py-0 col-12">
+            <input asp-for="Name" disabled class="form-control border shadow" />
+            <label asp-for="Name" class="ms-2">Route Name</label>
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="form-floating py-0 col-12">
+            <input asp-for="Origin" disabled class="form-control border shadow" />
+            <label asp-for="Origin" class="ms-2">Origin</label>
+            <span asp-validation-for="Origin" class="text-danger"></span>
+        </div>
+        <div class="form-floating py-0 col-12">
+            <input asp-for="Destination" disabled class="form-control border shadow" />
+            <label asp-for="Destination" class="ms-2">Destination</label>
+            <span asp-validation-for="Destination" class="text-danger"></span>
+        </div>
+        <div class="form-floating py-0 col-12">
+            <input asp-for="DefaultPrice" disabled class="form-control border shadow" />
+            <label asp-for="DefaultPrice" class="ms-2">Price</label>
+            <span asp-validation-for="DefaultPrice" class="text-danger"></span>
+        </div>
+
+        <div class="w-100 card border-bottom-0">
+            <div class="card-header ml-0 py-3" style="background-color: #023673">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h2 class="text-white py-2">Schedule Details</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <table class="table" id="scheduleTable">
+            <thead>
+                <tr>
+                    <th>Departure Time</th>
+                    <th>Arrival Time</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (int i = 0; i < Model.Schedules.Count; i++)
+                {
+                    <tr>
+                        <td>
+                            <input type="hidden" disabled name="Schedules[@i].Id" value="@Model.Schedules[i].Id" />
+                            <input type="time" disabled name="Schedules[@i].DepartureTime" class="form-control" value="@Model.Schedules[i].DepartureTime" />
+                        </td>
+                        <td>
+                            <input type="time" disabled name="Schedules[@i].ArrivalTime" class="form-control" value="@Model.Schedules[i].ArrivalTime" />
+                        </td>
+                        <td>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+
+        <div class="row pt-2">
+            <div class="col-7 col-md-4">
+                <button type="submit" class="btn btn-danger">
+                    <i class="bi bi-trash-fill"></i> Delete
+                </button>
+                <a class="btn btn-primary" asp-controller="Route" asp-action="Index"> <i class="bi bi-x-circle"></i> Cancel</a>
+
+            </div>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        <partial name="_ValidationScriptsPartial" />
+
+    }
+}
